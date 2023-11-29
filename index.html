@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/3dce9717da.js" crossorigin="anonymous"></script>
+</head>
+<!-- To Do List Body-->
+<body>  
+  <div class="container">
+    <div class="todo-list">
+        <h2>To-Do List <img src="https://img.freepik.com/premium-vector/vector-cartoon-list-icon-comic-style-checklist-task-list-sign-illustration-pictogram-reminder-business-splash-effect-concept_157943-5281.jpg?w=360"  alt="todo-image"></h2><!--To-do slate image-->
+        <div class="row">
+            <i class ="fa-solid fa-list-check"></i><!--list-check icon-->
+            <input type="text" id="input-box" placeholder="Add Your Task">
+            <button onclick="addTask()" id="add-img"><img src="https://cdn-icons-png.flaticon.com/512/262/262038.png" alt=""></button><!--add image-->
+        </div>
+        <div class="mid">
+             <i class="fa-solid fa-check-double"></i><!--double-tick icon-->
+             <p class="btn" id="complete-all">Complete all tasks </p>
+             <p class="btn" id="clear-all">Clear All</p>
+        </div>
+  <hr>
+  <!-- Empty Unorder Todolist for add list item -->
+   <ul id="list-container"></ul>
+  <hr>
+<!-- Showing Tasks left, All task, Completed and Incomplete tasks -->
+   <div class="total-task">
+    <span > <span id="tasks-counter"></span> Task Left</span>  
+
+        <div class="task-status">
+            <span class="btn all">All</span>
+            <span class="btn com">Completed</span>
+            <span class="btn rem">Incomplete</span>
+        </div>
+   </div>
+  </div>
+ </div>
+      <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

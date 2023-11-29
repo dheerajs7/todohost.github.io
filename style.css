@@ -1,0 +1,161 @@
+/* import Google font - Urbanist*/
+@import url('https://fonts.googleapis.com/css2?family=Jost&family=Poppins:wght@300;400&family=Urbanist:wght@300;400&display=swap');
+     
+/* universal style*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'urbanist', sans-serif;
+    box-sizing: border-box;
+
+}
+
+
+/* styling on container */
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px;
+    background-image: linear-gradient(to right bottom, #026a87, #037ea3, #0f92c1, #21a6e0, #35baff);
+}
+
+/* styling on heading and image*/
+.todo-list{
+    width: 100%;
+    max-width:540px;
+    background:#fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+.todo-list h2{
+    color: #012a6b;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.todo-list h2 img{
+    height: 50px;
+    margin-left:10px;
+}
+
+/*stying on input box  */
+.row{
+    height: 42px;
+    width: 100%;
+    display:flex ;
+    align-items: center;
+    background: #D3D3D3;
+    border-radius: 5px;
+    padding-left: 5px;
+    margin:20px 0;
+}
+
+.row:hover{
+    background-color: #B0B0B0;
+}
+
+input{
+    flex:1;
+    border:none;
+    outline:none;
+    background: transparent;
+    padding: 20px;
+    font-size: larger;
+    font-weight: 100;
+}
+/* add image styling*/
+#add-img{
+    border:none;
+    outline:none;
+    background: transparent;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#add-img img{
+ height: 20px;
+}
+/*mid part styling*/
+.mid{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color:	#8a8989;
+
+}
+
+#complete-all{
+    margin-left: 0px;
+    
+}
+
+#clear-all{
+    margin-left: 215px;
+    
+}
+/*styling for the list of todos*/
+ul li{
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    font-size:17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position:relative;
+}
+ul li::before{
+    content:'';
+    position:absolute;
+    height: 28px;
+    width:28px;
+    background-image: url("https://icons-for-free.com/iconfiles/png/256/radio+button+unchecked+48px-131987943277815937.png ");
+   background-size: cover;
+   background-position: center;
+   top:9px;
+   left:8px;
+}
+ul li.checked{
+    color:		#080808;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url("https://w1.pngwing.com/pngs/643/645/png-transparent-black-check-mark-checkbox-circle-circles-symbol-button-text-black-and-white-line-thumbnail.png");
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 2px;
+    margin-top: 10px;
+    border: 2px solid ;
+    border-radius:50%;
+    width: 23px;
+    height: 23px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align:center;
+
+}
+ul li span:hover{
+    background: #cbcccc;
+}
+/*style for the btn*/
+.btn{
+    cursor:pointer;
+    margin:3px;
+}
+.btn:hover{
+    color: black;
+}
+
+.total-task{
+    display: flex;
+    justify-content: space-between;
+    color: 	#727171;
+}
+
+
